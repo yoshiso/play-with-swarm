@@ -1,0 +1,1 @@
+docker-machine rm ec2-01 ec2-02 ec2-03
