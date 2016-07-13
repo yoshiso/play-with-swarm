@@ -1,0 +1,19 @@
+# /usr/lib/systemd/system/swarm-agent.service
+[Unit]
+Description=swarm-agent daemon
+
+Wants=etcd.service
+After=etcd.service
+
+Wants=docker.service
+After=docker.service
+
+[Service]
+ExecStart=/usr/bin/docker run swarm join --advertise=<%= node['private_ipv4'] %>:2375 etcd://<%= node['private_ipv4'] %>:2379/swarm
+
+Restart=always
+RestartSec=10s
+
+[Install]
+
+WantedBy=multi-user.target

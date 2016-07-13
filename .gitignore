@@ -1,3 +1,4 @@
-tmp/*.yml
+tmp/**/*.yml
 .envrc
+
 

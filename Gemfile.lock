@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/yoshiso/itamae-plugin-recipe-etcd.git
+  revision: 6433a6feb04a753722ecc47e7a265eac5e7dc5d3
+  specs:
+    itamae-plugin-recipe-etcd (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -13,6 +19,7 @@ GEM
       net-ssh (>= 2.6.5)
     net-ssh (3.1.1)
     net-telnet (0.1.1)
+    rake (10.4.2)
     schash (0.1.2)
     sfl (2.2)
     specinfra (2.59.0)
@@ -27,6 +34,8 @@ PLATFORMS
 
 DEPENDENCIES
   itamae
+  itamae-plugin-recipe-etcd!
+  rake
 
 BUNDLED WITH
    1.12.5
