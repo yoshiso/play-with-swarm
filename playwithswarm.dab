@@ -1,0 +1,21 @@
+{
+  "Services": {
+    "suicide": {
+      "Image": "quay.io/yss44/suicide@sha256:c724948ff90c28de2f9f3006c4e5db309e282553b7212f915203d41e92820a34", 
+      "Networks": [
+        "front-tier"
+      ],
+      "Args": [
+        "--wait",
+        "30"
+      ]
+    }, 
+    "vote1": {
+      "Image": "instavote/vote@sha256:744fb4b71488d8a925b519846dcc3b4463bde829457e912bd47ef8da36a93bd6", 
+      "Networks": [
+        "front-tier"
+      ]
+    }
+  }, 
+  "Version": "0.1"
+}

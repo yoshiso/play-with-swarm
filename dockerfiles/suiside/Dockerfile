@@ -4,3 +4,4 @@ ADD app.py /app.py
 
 ENTRYPOINT ["python", "/app.py"]
 
+STOPSIGNAL SIGINT

@@ -4,8 +4,10 @@ services:
     image: instavote/vote
     networks:
       - "front-tier"
-
-  vote2:
-    image: instavote/vote
+  suicide:
+    image: quay.io/yss44/suicide
     networks:
       - "front-tier"
+
+networks:
+  front-tier:
