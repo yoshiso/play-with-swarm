@@ -1,0 +1,11 @@
+version: "2"
+services:
+  vote1:
+    image: instavote/vote
+    networks:
+      - "front-tier"
+
+  vote2:
+    image: instavote/vote
+    networks:
+      - "front-tier"
